@@ -12,9 +12,9 @@ fun mockTestA():Unit{
 fun mockTestB():Unit{
    val persona:Persona = Persona("Juan Jacobo","Rosseau",45,67.9,1.80)
    val servicioPersona:IPersonaService = PersonaServiceImpl()
-   println("Nombre: ${persona.nombre} ${persona.apellido} , Edad: ${persona.edad}")
+   println("Nombre: ${persona.nombre} ${persona.apellido} - Edad: ${persona.edad}")
    val mayor =   if (servicioPersona.isMayor(persona)) "Es mayor de edad" else "Es menor de edad"  
-   println(" ${persona.nombre} : ${mayor}")
+   println("${persona.nombre} : ${mayor}")
    println("Imc: ${servicioPersona.getImc(persona)}")
 }
 
