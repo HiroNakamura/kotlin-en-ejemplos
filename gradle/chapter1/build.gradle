@@ -30,8 +30,6 @@ dependencies {
 jar {
   manifest { attributes 'Main-Class': 'chapter1.MainKt' }
   
-  //from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-  
   from {
         configurations.compile.collect {
             it.isDirectory() ? it : project.zipTree(it).matching {
