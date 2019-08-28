@@ -8,3 +8,5 @@ Ejercicios hechos en lenguaje **Kotlin**.
 **Link:**
 
 https://kotlinlang.org/
+
+https://kotlin.es/
