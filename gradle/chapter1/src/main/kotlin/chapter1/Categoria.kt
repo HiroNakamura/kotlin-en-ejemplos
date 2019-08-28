@@ -1,4 +1,4 @@
-import chapter1
+package chapter1
 
 enum class Categoria(val monto:Double){
   STANDAR(25.0),
