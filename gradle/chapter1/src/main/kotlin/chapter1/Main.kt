@@ -21,10 +21,12 @@ fun mockTestB():Unit{
 fun mockTestC():Unit{
    println("#Mock Test C:")
    try{
-      var division = 9.0 / 0.0
-   }catch(except:Exception){
-      println("Ha ocurrido una Excepcion")
-      except.printStackTrace()
+      var division:Int = 9/0
+   }catch(ex:Exception){
+      println("Ha ocurrido una Excepcion: ${except.toString()}")
+      ex.printStackTrace()
+   }finally{
+      println("Ha finalizado en bloque")
    }
 }
 
