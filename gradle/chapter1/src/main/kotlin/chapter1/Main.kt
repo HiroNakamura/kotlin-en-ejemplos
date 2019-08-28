@@ -18,6 +18,6 @@ fun mockTestB():Unit{
 }
 
 fun main(args: Array<String>) {
-    //mockTestA()
+    mockTestA()
     mockTestB()
 }
