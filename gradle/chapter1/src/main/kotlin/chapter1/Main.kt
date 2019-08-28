@@ -20,13 +20,13 @@ fun mockTestB():Unit{
 
 fun mockTestC():Unit{
    println("#Mock Test C:")
-   /*try{
+   try{
       var division:Int = 9/0
    }catch(e: ArithmeticException){
       println("Ha ocurrido una Excepcion: ")
    }finally{
       println("Ha finalizado en bloque")
-   }*/
+   }
 }
 
 fun main(args: Array<String>) {
