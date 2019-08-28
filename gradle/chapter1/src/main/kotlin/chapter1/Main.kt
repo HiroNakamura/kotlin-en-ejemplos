@@ -19,6 +19,7 @@ fun mockTestB():Unit{
 }
 
 fun mockTestC():Unit{
+   println("#Mock Test C:")
    try{
       var division = 9.0 / 0.0
    }catch(except:Exception){
@@ -28,7 +29,7 @@ fun mockTestC():Unit{
 }
 
 fun main(args: Array<String>) {
-    mockTestA()
-    mockTestB()
+    //mockTestA()
+    //mockTestB()
     mockTestC()
 }
