@@ -9,4 +9,8 @@ open class Persona(open var nombre:String?=null,
     println("Se ha creado e inicializado objeto 'Persona'")   
   }
   
+  init{
+    println("Nombre ${nombre}  ${apellido}")
+  }
+  
  }
