@@ -22,6 +22,7 @@ fun mockTestC():Unit{
    println("#Mock Test C:")
    try{
       var division:Int = 9/0
+      println("${division}")
    }catch(e: ArithmeticException){
       println("Ha ocurrido una ArithmeticExcepcion")
    }finally{
@@ -29,8 +30,31 @@ fun mockTestC():Unit{
    }
 }
 
+fun mockTestD():Unit{
+  var b:Byte = 10
+  var s:Short = 123
+  var c:Char = '\u9087'
+  var e:Int = 123
+  var l:Long = 12L
+  var f:Float = 12.3f
+  var d:Double = 123.90
+  var verdadero:Boolean = true
+  var cad:String = "El general no tiene quien le escriba"
+  println("#Variables en Kotlin")
+  println("Byte: ${b}")
+  println("Short: ${s}")
+  println("Char: ${c}")
+  println("Int: ${e}")
+  println("Long: ${l}")
+  println("Float: ${f}")
+  println("Double: ${d}")
+  println("Boolean: ${verdadero}")
+  println("String: ${cad}")
+} 
+
 fun main(args: Array<String>) {
     //mockTestA()
     //mockTestB()
-    mockTestC()
+    //mockTestC()
+    mockTestD()
 }
