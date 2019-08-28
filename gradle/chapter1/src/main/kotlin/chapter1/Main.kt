@@ -22,9 +22,9 @@ fun mockTestC():Unit{
    println("#Mock Test C:")
    try{
       var division:Int = 9/0
-   }catch(ex:Exception){
-      println("Ha ocurrido una Excepcion: ${ex.toString()}")
-      ex.printStackTrace()
+   }catch(e:Exception){
+      println("Ha ocurrido una Excepcion: ${e.toString()}")
+      e.printStackTrace()
    }finally{
       println("Ha finalizado en bloque")
    }
