@@ -23,7 +23,7 @@ fun mockTestC():Unit{
    try{
       var division:Int = 9/0
    }catch(e: ArithmeticException){
-      println("Ha ocurrido una Excepcion: ")
+      println("Ha ocurrido una ArithmeticExcepcion")
    }finally{
       println("Ha finalizado en bloque")
    }
