@@ -18,7 +18,17 @@ fun mockTestB():Unit{
    println("Imc: ${servicioPersona.getImc(persona)}")
 }
 
+fun mockTestC():Unit{
+   try{
+      var division = 9.0 / 0.0
+   }catch(except:Exception){
+      println("Ha ocurrido una Excepcion")
+      except.printStackTrace()
+   }
+}
+
 fun main(args: Array<String>) {
     mockTestA()
     mockTestB()
+    mockTestC()
 }
