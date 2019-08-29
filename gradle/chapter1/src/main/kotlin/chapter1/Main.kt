@@ -52,9 +52,24 @@ fun mockTestD():Unit{
   println("String: ${cad}")
 } 
 
+fun mockTestE():Unit{
+  val categoria:Categoria= Categoria.NORMAL
+  println("${categoria}")
+  (when(categoria){
+    Categoria.STANDAR -> println("Precio Standard")
+    Categoria.NORMAL -> println("Precio Normal")
+    Categoria.VIP -> println("Precio VIP")
+    Categoria.PREMIUM -> println("Precio PREMIUM")
+    else -> {
+      println("Precio PREMIUM")
+    }
+  })
+}
+
 fun main(args: Array<String>) {
     //mockTestA()
     //mockTestB()
     //mockTestC()
-    mockTestD()
+    //mockTestD()
+    mockTestE()
 }
