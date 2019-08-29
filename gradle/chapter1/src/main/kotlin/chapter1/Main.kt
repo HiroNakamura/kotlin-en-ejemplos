@@ -75,11 +75,19 @@ fun mockTestF():Unit{
    println("El triple de 45 es ${numero}")
 }
 
+fun mockTestG():Unit{
+   var edad:Int = 18;
+   if(edad.esMayor()){
+      println("Eres mayor de edad, tu edad es ${edad}")
+   }
+}
+
 fun main(args: Array<String>) {
     //mockTestA()
     //mockTestB()
     //mockTestC()
     //mockTestD()
     //mockTestE()
-    mockTestF()
+    //mockTestF()
+    mockTestG()
 }
