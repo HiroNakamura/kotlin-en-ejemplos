@@ -68,7 +68,11 @@ fun mockTestE():Unit{
 
 fun mockTestF():Unit{
    var numero:Int = 9.triple()
-   println("${numero}")
+   println("El triple de 9 es ${numero}")
+   numero = 12.triple()
+   println("El triple de 12 es ${numero}")
+   numero = 45.triple()
+   println("El triple de 45 es ${numero}")
 }
 
 fun main(args: Array<String>) {
