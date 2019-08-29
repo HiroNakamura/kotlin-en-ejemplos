@@ -66,10 +66,16 @@ fun mockTestE():Unit{
   })
 }
 
+fun mockTestF():Unit{
+   var numero:Int = 9.triple()
+   println("${numero}")
+}
+
 fun main(args: Array<String>) {
     //mockTestA()
     //mockTestB()
     //mockTestC()
     //mockTestD()
-    mockTestE()
+    //mockTestE()
+    mockTestF()
 }
