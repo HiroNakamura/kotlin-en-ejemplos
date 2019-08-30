@@ -15,6 +15,7 @@ fun recorrer_lista_mapa_mutables():Unit{
   }
 
   val miMapa = mutableMapOf("A" to 1, "B" to 2, "C" to 3)
+  miMapa.put("D",4)
   miMapa.forEach{ key,value -> println("$key -> $value")}
 
 }
@@ -31,6 +32,14 @@ fun recorrer_mapa():Unit{
     println("${key} : ${value}")
   }
 }
+
+fun recorrer_lista():Unit{
+  val lista = listOf(0,1,2,3)
+  lista.forEach{it ->
+    println("$it")
+  }
+}
+
 
 fun recorrer_array():Unit{
   val arregloString = arrayOf("Garita Perez","Kotlin for Beginners","Odiseo salva la granja")
