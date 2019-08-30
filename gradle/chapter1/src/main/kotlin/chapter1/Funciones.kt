@@ -14,7 +14,7 @@ fun Int.triple():Int{
 }
 
 fun String.tam():Int{
-   return this.lentgh
+   return this.length
 }
 
 fun Int.esMayor():Boolean{
