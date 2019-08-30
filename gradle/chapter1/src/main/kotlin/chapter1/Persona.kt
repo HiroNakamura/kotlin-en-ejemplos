@@ -1,5 +1,10 @@
 package chapter1
 
+/**
+*@author Fer Carraro
+*@date 30/agosto/2019
+*/
+
 open class Persona(open var nombre:String,
                    open var apellido:String,
                    open var edad:Int,
