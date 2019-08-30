@@ -6,10 +6,9 @@ package chapter1
 */
 
 
-
 fun recorrer_lista_mapa_mutables():Unit{
   val continentes=mutableListOf("Africa","America","Asia","Europa","Oceania","Antartida")
-  continentes.add("Desonocido")
+  continentes.add("Desconocido")
   continentes.forEach{ it ->
     println("Hola $it")
   }
