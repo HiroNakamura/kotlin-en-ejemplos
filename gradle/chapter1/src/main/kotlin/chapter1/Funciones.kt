@@ -3,6 +3,7 @@ package chapter1
 
 import javax.swing.JOptionPane
 
+
 fun Int.triple():Int{
     return this * 3
 }
@@ -24,6 +25,16 @@ fun print_dato(dato:String):Unit{
 fun saludar(nombre:String?=null):String{
    return "Hola, ${nombre}"
 }
+
+fun mockTestI():Unit{
+	var nada:String?=null
+	var saludar = when(nada){
+		null -> "Hola, Kamyla!"
+		else -> nada
+	}
+	println("$saludar")
+}
+
 
 fun mockTestA():Unit{
    val nombre:String = "John Wallager"
