@@ -34,6 +34,7 @@ fun saludar(nombre:String?=null):String{
 fun mockTestJ():Unit{
     recorrer_array()
     recorrer_mapa()
+    recorrer_lista_mapa_mutables()
 }
 
 
