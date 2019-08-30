@@ -10,7 +10,11 @@ import javax.swing.JOptionPane
 
 
 fun Int.triple():Int{
-    return this * 3
+   return this * 3
+}
+
+fun String.tam():Int{
+   return this.lentgh
 }
 
 fun Int.esMayor():Boolean{
@@ -30,6 +34,12 @@ fun saludar(nombre:String?=null):String{
    return "Hola, ${nombre}"
 }
 
+fun mockTestK():Unit{
+  println("FER".tam())
+	var nombre:String = "ABCDEFG"
+	var tamanyo = nombre.tam()
+	println("$nombre  : $tamanyo")
+}
 
 fun mockTestJ():Unit{
     recorrer_array()
