@@ -26,10 +26,15 @@ fun print_dato(dato:String):Unit{
 	System.exit(0)
 }
 
-
 fun saludar(nombre:String?=null):String{
    return "Hola, ${nombre}"
 }
+
+
+fun mockTestJ():Unit{
+	
+}
+
 
 fun mockTestI():Unit{
 	var nada:String?=null
