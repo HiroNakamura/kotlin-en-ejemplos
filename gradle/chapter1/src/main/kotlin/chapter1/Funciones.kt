@@ -33,6 +33,7 @@ fun saludar(nombre:String?=null):String{
 
 fun mockTestJ():Unit{
     recorrer_array()
+    recorrer_mapa()
 }
 
 
