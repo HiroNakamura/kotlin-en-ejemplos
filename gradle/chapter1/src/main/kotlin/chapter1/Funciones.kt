@@ -34,12 +34,21 @@ fun saludar(nombre:String?=null):String{
    return "Hola, ${nombre}"
 }
 
+fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
+
+fun menorEs(a:Int,b:Int):Int = if(a<b) a else b
+
+
+
 fun mockTestK():Unit{
   var nombre:String="FER";
   println("$nombre -> tam: "+nombre.tam())
-	nombre = "ABCDEFG"
-	var tamanyo = nombre.tam()
-	println("$nombre  -> tam: $tamanyo")
+  nombre = "ABCDEFG"
+  var tamanyo = nombre.tam()
+  println("$nombre  -> tam: $tamanyo")
+  var mayor = mayorEs(45,33)
+  var menor = menorEs(12,43)
+  println("Mayor -> $mayor : Menor -> $menor")
 }
 
 fun mockTestJ():Unit{
