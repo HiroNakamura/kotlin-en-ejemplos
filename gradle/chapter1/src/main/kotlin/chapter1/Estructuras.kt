@@ -11,17 +11,31 @@ fun recorrer_array():Unit{
   println("Valor del indice 1: "+arregloString[1])
   println("Valor del indice 0: "+arregloString.get(0))
   
-  //Recorrer sin índice
-  arregloString.forEach(it->{
-    println(it)
-  });
+  //Recorrer con forEach
+  arregloString.forEach{
+    println("${it}")
+  }
+
+  println()
+  //Recorrer con for
+  for(i in arregloString){
+    println("${i}")
+  }
   
   println()
   
-  val arregloInteger:Array<Int>=arrayOf<Int>(0,1,2,3,4,5,6,7,8,9)
-  for(var entero:Int in arregloInteger){
-    println("Hola no. ${entero}")
+  val arregloInteger = arrayOf<Int>(0,1,2,3,4,5,6,7,8,9);
+  //Foreach
+  arregloInteger.forEach{
+    print("${it}-")
   }
+  println()
+  //Con for
+  for(j in arregloInteger){
+    print(j)
+  }
+
+
   
   
   
