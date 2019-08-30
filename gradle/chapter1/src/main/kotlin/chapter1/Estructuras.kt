@@ -15,9 +15,12 @@ fun recorrer_mapa():Unit{
 
 fun recorrer_array():Unit{
   val arregloString = arrayOf("Garita Perez","Kotlin for Beginners","Odiseo salva la granja")
-  println("Tam: ${arregloString.size}}")
-  println("Valor del indice 1: "+arregloString[1])
-  println("Valor del indice 0: "+arregloString.get(0))
+  if(arregloString.size > 0){
+    println("Arreglo lleno")
+    println("Tam: ${arregloString.size}")
+    println("Valor del indice 1: "+arregloString[1])
+    println("Valor del indice 0: "+arregloString.get(0))
+  }
   
   //Recorrer con forEach
   arregloString.forEach{
