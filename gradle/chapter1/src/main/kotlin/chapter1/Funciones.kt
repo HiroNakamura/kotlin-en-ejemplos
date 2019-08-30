@@ -35,10 +35,11 @@ fun saludar(nombre:String?=null):String{
 }
 
 fun mockTestK():Unit{
-  println("FER".tam())
-	var nombre:String = "ABCDEFG"
+  var nombre:String="FER";
+  println("$nombre -> tam: "+nombre.tam())
+	nombre = "ABCDEFG"
 	var tamanyo = nombre.tam()
-	println("$nombre  : $tamanyo")
+	println("$nombre  -> tam: $tamanyo")
 }
 
 fun mockTestJ():Unit{
