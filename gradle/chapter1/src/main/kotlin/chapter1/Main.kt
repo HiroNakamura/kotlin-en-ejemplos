@@ -31,6 +31,7 @@ fun mockTestC():Unit{
 }
 
 fun mockTestD():Unit{
+  val CONSTANTE_STRING:String = "#Variables en Kotlin"
   var b:Byte = 10
   var s:Short = 123
   var c:Char = '\u9087'
@@ -40,7 +41,7 @@ fun mockTestD():Unit{
   var d:Double = 123.90
   var verdadero:Boolean = true
   var cad:String = "El general no tiene quien le escriba"
-  println("#Variables en Kotlin")
+  println(CONSTANTE_STRING)
   println("Byte: ${b}")
   println("Short: ${s}")
   println("Char: ${c}")
@@ -82,6 +83,11 @@ fun mockTestG():Unit{
    }
 }
 
+fun mockTestH():Unit{
+  var dato:String = input_dato()
+  print_dato(dato)
+}
+
 fun main(args: Array<String>) {
     //mockTestA()
     //mockTestB()
@@ -89,5 +95,6 @@ fun main(args: Array<String>) {
     //mockTestD()
     //mockTestE()
     //mockTestF()
-    mockTestG()
+    //mockTestG()
+    mockTestH()
 }
