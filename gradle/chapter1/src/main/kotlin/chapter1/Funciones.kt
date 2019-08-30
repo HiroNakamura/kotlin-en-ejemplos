@@ -48,7 +48,7 @@ fun mockTestK():Unit{
   println("$nombre  -> tam: $tamanyo")
   var mayor = mayorEs(45,33)
   var menor = menorEs(12,43)
-  println("Mayor -> $mayor : Menor -> $menor")
+  println("Mayor de 45 y 33 -> $mayor : Menor de 12 y 43 -> $menor")
 }
 
 fun mockTestJ():Unit{
