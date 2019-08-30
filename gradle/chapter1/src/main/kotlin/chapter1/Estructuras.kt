@@ -19,7 +19,7 @@ fun recorrer_array():Unit{
   println()
   
   val arregloInteger:Array<Int>=arrayOf<Int>(0,1,2,3,4,5,6,7,8,9)
-  for(entero in arregloInteger){
+  for(var entero:Int in arregloInteger){
     println("Hola no. ${entero}")
   }
   
