@@ -35,6 +35,7 @@ fun ciclo_for(){
    val miLista = listOf("Aldebran","Casius","Andromeda","Apolo")
    println("#Ciclo for:")
    //for range
+  println("For range:")
    for(i in 0..TAM){
      if(i%3==0 && i%5==0){
        println("$conteo: $i")
@@ -43,11 +44,13 @@ fun ciclo_for(){
    }
   println()
   //for collection
+  println("For collection:")
   for(item in miLista){
     println("item: $item")
   }
   println()
   //for until
+  println("For until:")
   for(i in 20 until TAM){
     if(i%5==0 && i%3==0){
       println("Ciao no. $i")
@@ -55,6 +58,7 @@ fun ciclo_for(){
   }
   println()
   //for downTo
+  println("For downTo:")
   for(i in 40 downTo 0){
     if(i%5==0 && i%3==0){
       println("Ciao no. $i")
@@ -62,6 +66,7 @@ fun ciclo_for(){
   }
   println()
   //for downTo, step
+  println("For downTo, step:")
   for(i in TAM downTo 0 step 10){
     if(i%5==0 && i%3==0){
       println("Ciao no. $i")
