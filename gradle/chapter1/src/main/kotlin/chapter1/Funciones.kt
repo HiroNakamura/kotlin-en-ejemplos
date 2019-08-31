@@ -37,6 +37,7 @@ fun saludar(nombre:String?=null):String{
 
 fun mockTestL():Unit{
    ciclo_while()
+   ciclo_for()
 }
 
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
