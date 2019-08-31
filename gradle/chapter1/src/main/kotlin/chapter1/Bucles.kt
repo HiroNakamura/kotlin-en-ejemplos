@@ -18,3 +18,16 @@ fun ciclo_while():Unit{
      }
   }
 }
+
+
+fun ciclo_for(){
+   var conteo:Int=0;
+   for(i in 0..TAM){
+     if(i%3==0 && i%5==0){
+       println("$conteo: $i")
+     }
+     conteo++;
+   }
+}
+
+
