@@ -7,6 +7,19 @@ Ejercicios hechos en lenguaje **Kotlin**.
 
 **Nota:** Es necesario con Gradle (https://gradle.org) instalado.
 
+Para instalar Kotlin se puede usr SDKMAN!
+
+```
+$ sdk install kotlin
+```
+
+Mostrar versión instalada:
+
+```
+$ kotlinc -version
+```
+
+
 
 **Link:**
 
