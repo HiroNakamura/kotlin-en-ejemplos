@@ -34,6 +34,11 @@ fun saludar(nombre:String?=null):String{
    return "Hola, ${nombre}"
 }
 
+
+fun mockTestL():Unit{
+   ciclo_while()
+}
+
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
 
 fun menorEs(a:Int,b:Int):Int = if(a<b) a else b
