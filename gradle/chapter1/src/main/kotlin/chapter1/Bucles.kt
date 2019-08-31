@@ -22,12 +22,19 @@ fun ciclo_while():Unit{
 
 fun ciclo_for(){
    var conteo:Int=0;
+   val miLista = listOf("Aldebran","Casius","Andromeda","Apolo")
+   println("#Ciclo for:")
    for(i in 0..TAM){
      if(i%3==0 && i%5==0){
        println("$conteo: $i")
      }
      conteo++;
    }
+  
+  println()
+  for(item in lista){
+    println("item: $item")
+  }
 }
 
 
