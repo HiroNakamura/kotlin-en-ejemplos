@@ -32,7 +32,7 @@ fun ciclo_for(){
    }
   
   println()
-  for(item in lista){
+  for(item in miLista){
     println("item: $item")
   }
 }
