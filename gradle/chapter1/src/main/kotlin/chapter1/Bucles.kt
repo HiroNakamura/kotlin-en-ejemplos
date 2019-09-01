@@ -93,5 +93,18 @@ fun ciclo_for(){
     }
   }
   println()
+  for (num in 1..10) {
+    if (num % 2 == 0) {
+        continue
+    }
+    print("$num ")
+  }
+  println()
+  for (num in 1..10) {
+    if (num % 5 == 0) {
+        break
+    }
+    print("$num ")
+  }
   
 }
