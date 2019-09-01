@@ -26,7 +26,27 @@ fun ciclo_while():Unit{
     }
     cont++;
   }
+
+  println()
   
+}
+
+fun do_while_input():Unit{
+  var numero:Int
+  do {
+    println("Introduce un numero entre 1 y 100")
+    numero = readLine()!!.toInt()
+  } while(numero !in 1..100) 
+}
+
+
+fun do_while():Unit{
+  var numero:Int = 0
+  do{
+    if(numero%4==0){
+      println("$numero")
+    }
+  }while(numero++ < TAM)
 }
 
 
@@ -72,6 +92,6 @@ fun ciclo_for(){
       println("Ciao no. $i")
     }
   }
-  
+  println()
   
 }
