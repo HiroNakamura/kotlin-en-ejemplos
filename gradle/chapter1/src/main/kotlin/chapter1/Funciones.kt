@@ -38,6 +38,8 @@ fun saludar(nombre:String?=null):String{
 fun mockTestL():Unit{
    ciclo_while()
    ciclo_for()
+   val personas:List<Persona> = listOf<Persona>(Persona("Andres","Huertas",2019-1986,65.0,1.76),Persona("Tania","Martinez",2019-1987,70.0,1.70))
+   recorrer_personas(personas)
 }
 
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b

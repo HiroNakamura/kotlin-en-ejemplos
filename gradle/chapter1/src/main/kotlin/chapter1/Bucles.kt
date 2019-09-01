@@ -31,6 +31,15 @@ fun ciclo_while():Unit{
   
 }
 
+fun recorrer_personas(personas:List<Persona>):Unit{
+  println("\nRecorrer personas:")
+  if(personas.size > 0){
+    for(persona in personas){
+      println("Hola ${persona.nombre} ${persona.apellido}")
+    }
+  }
+}
+
 fun do_while_input():Unit{
   var numero:Int
   do {
