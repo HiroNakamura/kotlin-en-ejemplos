@@ -1,6 +1,11 @@
 package chapter1
 
-public interface ICalculo{
+/**
+*@author Fer Carraro
+*@date 03/septiembre/2019
+*/
+
+interface ICalculo{
   val propiedad:Double
   
   fun mostrar(cadena:String):Unit{
