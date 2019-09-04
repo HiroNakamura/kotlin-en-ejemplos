@@ -53,7 +53,20 @@ fun excepcionTestD():Unit{
 }
 
 
-
+fun excepcionTestE():Unit{
+  println("Excepciones:")
+  var nombre:String = "12ED"
+  try{
+    val numero = nombre.toInt()
+  }catch(re:RuntimeException){
+    println("Ha ocurrido una RuntimeException: ${re.toString()}")
+  }catch(e:Exception){
+    println("Ha ocurrido una Exception: ${e.toString()}")
+  }
+  finally{
+    println("Este bloque finaliza todo")
+  }
+}
 
 
 

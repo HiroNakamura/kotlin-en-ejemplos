@@ -57,6 +57,7 @@ fun mockTestN():Unit{
 
 fun mockTestO():Unit{
   println("Nada")
+  excepcionTestE()
 }
 
 
