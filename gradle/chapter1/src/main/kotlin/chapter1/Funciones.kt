@@ -34,6 +34,10 @@ fun saludar(nombre:String?=null):String{
    return "Hola, ${nombre}"
 }
 
+fun mockTestM():Unit{
+  val calculo:CalculoServiceImpl = CalculoServiceImpl()
+  println("Resultado = "+calculo.getCalculo(2019-1981))
+}
 
 fun mockTestL():Unit{
    ciclo_while()
