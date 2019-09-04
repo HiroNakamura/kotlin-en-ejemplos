@@ -50,6 +50,13 @@ fun mockTestL():Unit{
 fun mockTestN():Unit{
   excepcionTestA()
   excepcionTestB()
+  val dato = null?:excepcionTestC("Ha ocurrido una RuntimeException") 
+  println("Dato: $dato")
+  excepcionTestD()
+}
+
+fun mockTestO():Unit{
+  println("Nada")
 }
 
 

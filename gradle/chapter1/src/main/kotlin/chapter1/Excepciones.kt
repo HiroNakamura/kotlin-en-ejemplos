@@ -39,3 +39,26 @@ fun excepcionTestB():Unit{
        println("Ha finalizado el bloque")
     }
 }
+
+
+fun excepcionTestC(message:String):Nothing{
+	throw RuntimeException(message)
+}
+
+fun excepcionTestD():Unit{
+	println("##Excepciones:")
+	val input = "123X";
+	println("$input")
+	val a = try { input.toInt() } catch (e: NumberFormatException) { null }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -6,6 +6,7 @@ package chapter1
 */
 
 fun main(args: Array<String>) {
+    mockTestO()
     //mockTestA()
     //mockTestB()
     //mockTestC()
@@ -19,5 +20,5 @@ fun main(args: Array<String>) {
     //mockTestK()
     //mockTestL()
     //mockTestM()
-    mockTestN()
+    //mockTestN()
 }
