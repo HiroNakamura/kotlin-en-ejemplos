@@ -102,6 +102,7 @@ fun ciclo_for(){
     }
   }
   println()
+  println("For in ..  continue:")
   for (num in 1..10) {
     if (num % 2 == 0) {
         continue
@@ -109,6 +110,7 @@ fun ciclo_for(){
     print("$num ")
   }
   println()
+  println("For in .. break")
   for (num in 1..10) {
     if (num % 5 == 0) {
         break
