@@ -46,6 +46,13 @@ fun mockTestL():Unit{
    recorrer_personas(personas)
 }
 
+//Excepciones
+fun mockTestN():Unit{
+  excepcionTestA()
+  excepcionTestB()
+}
+
+
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
 
 fun menorEs(a:Int,b:Int):Int = if(a<b) a else b
