@@ -6,7 +6,8 @@ class CalculoServiceImpl:ICalculo{
 
     override fun getCalculo(dato:Any):Any{
         val mi_dato = dato==null?: fail("${dato} no ha sido definido")
-        return mi_dato;
+        var resultado = 220.0-mi_dato
+        return resultado;
     }
 
     override fun fail(message: String): Nothing {
