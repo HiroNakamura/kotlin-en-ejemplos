@@ -32,7 +32,7 @@ fun excepcionTestB():Unit{
       println("Alguna RuntimeException ha ocurrido: ${re.toString()}")
     }
     catch(ex:Exception){
-       println("Alguna Exception ha ocurrido: ${e.toString()}")
-       e.printStackTrace();
+       println("Alguna Exception ha ocurrido: ${ex.toString()}")
+       ex.printStackTrace();
     }
 }
