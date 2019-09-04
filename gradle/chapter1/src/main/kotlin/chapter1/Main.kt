@@ -19,6 +19,5 @@ fun main(args: Array<String>) {
     //mockTestK()
     //mockTestL()
     //mockTestM()
-    //excepcionTestA()
-    excepcionTestB()
+    mockTestN()
 }
