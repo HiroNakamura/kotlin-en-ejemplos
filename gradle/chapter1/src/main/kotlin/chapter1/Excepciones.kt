@@ -35,4 +35,7 @@ fun excepcionTestB():Unit{
        println("Alguna Exception ha ocurrido: ${ex.toString()}")
        ex.printStackTrace();
     }
+    finally{
+       println("Ha finalizado el bloque")
+    }
 }
