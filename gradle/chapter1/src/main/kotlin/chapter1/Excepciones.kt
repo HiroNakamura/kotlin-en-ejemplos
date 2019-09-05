@@ -66,6 +66,17 @@ fun excepcionTestE():Unit{
   finally{
     println("Este bloque finaliza todo")
   }
+
+  println()
+  var tuNombre = "eusebio"
+  try{
+    tuNombre = tuNombre.capitalize()
+  }finally{
+    println("Nombre: $tuNombre")
+  }
+
+
+
 }
 
 
