@@ -41,7 +41,7 @@ fun seleccion_when_any(dato:Any):String{
        is Boolean -> "El dato $dato es Boolean."
        is String -> "El dato $dato es String."
        else ->{
-          "No es un dato conocido"
+          "El dato $dato no es un dato conocido"
        }
     }
   return resultado;
