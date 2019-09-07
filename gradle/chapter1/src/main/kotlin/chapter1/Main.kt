@@ -8,6 +8,10 @@ package chapter1
 fun main(args: Array<String>) {
     val stringSet = setOf("one", "two", "three")
     mockTestQ(stringSet)
+    val listaInt = listOf(1,2,3,4)
+    mockTestQ(listaInt)
+    val listaAny = listOf("Uno",54, true, false,'\u0032',32.77,12.0f,127)
+    mockTestQ(listaAny)
     //mockTestP()
     //mockTestO()
     //mockTestA()
