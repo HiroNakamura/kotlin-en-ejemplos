@@ -95,7 +95,7 @@ fun mockTestQ(coleccion: Collection<Any>):Unit{
 			   "$item es de tipo desconocido"
 		   }
 	   }
-	   resultado += tipo.toString()
+	   resultado += tipo.toString()+"\n"
    }
    println("Resultado: ${resultado}")
 }
