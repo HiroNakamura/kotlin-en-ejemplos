@@ -29,7 +29,7 @@ fun seleccion_when(opc:Int):Unit{
     println("$resultado")
 }
 
-fun seleccion_when_any(dato:Any):Unit{
+fun seleccion_when_any(dato:Any):String{
     val resultado = when(dato){
        is Byte -> "El dato $dato es Byte."
        is Short -> "El dato $dato es Short."
@@ -44,4 +44,5 @@ fun seleccion_when_any(dato:Any):Unit{
           "No es un dato conocido"
        }
     }
+  return resultado;
 }
