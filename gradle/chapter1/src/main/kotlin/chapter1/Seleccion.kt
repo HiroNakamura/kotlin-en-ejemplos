@@ -40,5 +40,8 @@ fun seleccion_when_any(dato:Any):Unit{
        is Double -> "El dato $dato es Double."
        is Boolean -> "El dato $dato es Boolean."
        is String -> "El dato $dato es String."
+       else ->{
+          "No es un dato conocido"
+       }
     }
 }
