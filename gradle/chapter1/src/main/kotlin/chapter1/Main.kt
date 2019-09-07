@@ -6,7 +6,12 @@ package chapter1
 */
 
 fun main(args: Array<String>) {
-    mockTestR()
+
+    /*Chapter 2 */
+    
+
+    /*Chapter 1 */
+    //mockTestR()
     //val stringSet = setOf("one", "two", "three")
     //mockTestQ(stringSet)
     //val listaInt = listOf(1,2,3,4)
