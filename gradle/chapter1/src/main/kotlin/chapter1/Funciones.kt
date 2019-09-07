@@ -72,7 +72,34 @@ fun mockTestP():Unit{
 }
 
 fun mockTestR():Unit{
-   
+   val sb = StringBuilder("A")
+   val str:String = "A-B-C"
+   sb.append("-").append("B").append("-").append("C")
+   println("StringBuilder: "+sb.toString())
+   println("String: $str")
+   if(str.equals(sb.toString())){
+      println("Iguales")
+   }else{
+      println("No son iguales")
+   }//Salida:
+   //Iguales
+
+   println()
+   var cont:Int = 0
+   for(letra in str){
+      print("\n$letra : $cont")
+      cont++
+   }
+   println()
+   val miSb = StringBuffer("FER")
+   val miStr:String = miSb.toString()
+   println("$miStr")
+   cont = 0
+   for(letra in miStr){
+      println("$miStr : $cont")
+      cont++
+   }
+
 }
 
 fun mockTestQ(coleccion: Collection<Any>):Unit{
