@@ -65,12 +65,14 @@ fun mockTestP():Unit{
     seleccion_when(2)
     seleccion_if(18)
     seleccion_if(16)
+    seleccion_when_any("Hola")
+    seleccion_when_any('\u8976')
+    seleccion_when_any(345)
 }
 
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
 
 fun menorEs(a:Int,b:Int):Int = if(a<b) a else b
-
 
 
 fun mockTestK():Unit{
