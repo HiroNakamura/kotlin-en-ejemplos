@@ -71,6 +71,10 @@ fun mockTestP():Unit{
     println(seleccion_when_any(true))
 }
 
+fun mockTestR():Unit{
+   
+}
+
 fun mockTestQ(coleccion: Collection<Any>):Unit{
    var resultado:String = ""
    for(item in coleccion){
