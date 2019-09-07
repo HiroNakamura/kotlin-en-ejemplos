@@ -78,6 +78,26 @@ fun mockTestQ(coleccion: Collection<Any>):Unit{
       println("$item : $resultado ")
    }
    println("Resultado: ${resultado}")
+   println()
+   resultado = ""
+   for(item in coleccion){
+	   val tipo = when(item){
+		   is Byte -> "$item es Byte"
+		   is Short -> "$item es Short"
+		   is Char -> "$item es Char"
+		   is Int -> "$item es Int"
+		   is Long -> "$item es Long"
+		   is Float -> "$item es Float"
+		   is Double -> "$item es Double"
+		   is Boolean -> "$item es Boolean"
+		   is String -> "$item es String"
+		   else -> {
+			   "$item es de tipo desconocido"
+		   }
+	   }
+	   resultado += tipo.toString()
+   }
+   println("Resultado: ${resultado}")
 }
 
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
