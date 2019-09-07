@@ -71,6 +71,15 @@ fun mockTestP():Unit{
     println(seleccion_when_any(true))
 }
 
+fun mockTestQ(coleccion: Collection<Any>):Unit{
+   var resultado:String = ""
+   for(item in coleccion){
+	   resultado += item.toString()
+      println("$item : $resultado ")
+   }
+   println("Resultado: ${resultado}")
+}
+
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
 
 fun menorEs(a:Int,b:Int):Int = if(a<b) a else b
