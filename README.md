@@ -19,6 +19,7 @@ Mostrar versión instalada:
 $ kotlinc -version
 ```
 
+El proyecto usa **Gradle** para construir y ejecutar el proyecto. 
 
 
 **Link:**
@@ -26,3 +27,5 @@ $ kotlinc -version
 https://kotlinlang.org/
 
 https://kotlin.es/
+
+http://sparkjava.com
