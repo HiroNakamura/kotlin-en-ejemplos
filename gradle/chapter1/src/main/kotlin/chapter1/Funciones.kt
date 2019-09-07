@@ -60,6 +60,12 @@ fun mockTestO():Unit{
   excepcionTestE()
 }
 
+fun testMockTestP():Unit{
+    seleccion_when(1);
+    seleccion_when(2);
+    seleccion_if(18);
+    seleccion_if(16);
+}
 
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
 
