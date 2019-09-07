@@ -74,7 +74,7 @@ fun mockTestP():Unit{
 fun mockTestQ(coleccion: Collection<Any>):Unit{
    var resultado:String = ""
    for(item in coleccion){
-	   resultado += item.toString()
+	   resultado += item.toString() +" - "
       println("$item : $resultado ")
    }
    println("Resultado: ${resultado}")
