@@ -6,8 +6,8 @@ package chapter1
 */
 
 fun main(args: Array<String>) {
-    mockTestO()
     mockTestP()
+    //mockTestO()
     //mockTestA()
     //mockTestB()
     //mockTestC()
