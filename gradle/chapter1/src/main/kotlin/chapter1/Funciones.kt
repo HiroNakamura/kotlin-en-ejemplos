@@ -77,7 +77,7 @@ fun mockTestQ(coleccion: Collection<Any>):Unit{
 	   resultado += item.toString() +" - "
       println("$item : $resultado ")
    }
-   println("Resultado: ${resultado}")
+   println("Resultado: \n ${resultado}")
    println()
    resultado = ""
    for(item in coleccion){
@@ -97,7 +97,7 @@ fun mockTestQ(coleccion: Collection<Any>):Unit{
 	   }
 	   resultado += tipo.toString()+"\n"
    }
-   println("Resultado: ${resultado}")
+   println("Resultado: \n ${resultado}")
 }
 
 fun mayorEs(a:Int,b:Int):Int = if(a>b) a else b
