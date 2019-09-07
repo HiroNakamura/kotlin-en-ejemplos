@@ -6,7 +6,9 @@ package chapter1
 */
 
 fun main(args: Array<String>) {
-    mockTestP()
+    val stringSet = setOf("one", "two", "three")
+    mockTestQ(stringSet)
+    //mockTestP()
     //mockTestO()
     //mockTestA()
     //mockTestB()
