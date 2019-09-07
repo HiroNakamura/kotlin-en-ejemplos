@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     mockTestQ(stringSet)
     val listaInt = listOf(1,2,3,4)
     mockTestQ(listaInt)
-    val listaAny = listOf("Uno",null,54, true, false,'\u0032',32.77,12.0f,127,StringBuilder())
+    val listaAny:List<Any> = listOf<Any>(StringBuilder("Hola"),"Uno","null",54, true, false,'\u0032',32.77,12.0f,127)
     mockTestQ(listaAny)
     //mockTestP()
     //mockTestO()
