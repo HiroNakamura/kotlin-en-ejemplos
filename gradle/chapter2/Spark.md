@@ -3,13 +3,13 @@
 
 1. Construimos proyecto.
 
-```java
+```bash
 $ gradle build
 ```
 
 2. Ejecutamos proyecto.
 
-```java
+```bash
 $ gradle run
 ```
 
