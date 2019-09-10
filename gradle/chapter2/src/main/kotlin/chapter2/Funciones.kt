@@ -7,26 +7,6 @@ package chapter2
 */
 
 import spark.Spark.*
-//import com.fasterxml.jackson.core.*;
-//import com.fasterxml.jackson.core.io.CharacterEscapes;
-//import com.fasterxml.jackson.core.io.SegmentedStringWriter;
-////import com.fasterxml.jackson.core.json.JsonFactory;
-//import com.fasterxml.jackson.core.type.ResolvedType;
-//import com.fasterxml.jackson.core.type.TypeReference;
-//import com.fasterxml.jackson.core.util.*;
-
-//import com.fasterxml.jackson.databind.cfg.*;
-//import com.fasterxml.jackson.databind.deser.*;
-//import com.fasterxml.jackson.databind.exc.MismatchedInputException;
-//import com.fasterxml.jackson.databind.introspect.*;
-//import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper;
-//import com.fasterxml.jackson.databind.jsontype.SubtypeResolver;
-//import com.fasterxml.jackson.databind.node.*;
-//import com.fasterxml.jackson.databind.ser.*;
-//import com.fasterxml.jackson.databind.type.*;
-//import com.fasterxml.jackson.databind.util.ClassUtil;
-//import com.fasterxml.jackson.databind.util.RootNameLookup;
-//import com.fasterxml.jackson.databind.util.TokenBuffer;
 import com.fasterxml.jackson.databind.ObjectMapper
 
 
@@ -39,6 +19,9 @@ fun getHola(){
 }
 
 
+fun Request.qp(key: String): String = this.queryParams(key)
+
+//http://localhost:4567/api/
 fun rest_api(){
    
    path("/api") {
@@ -52,7 +35,35 @@ fun rest_api(){
       get("/departamentos/:id") { req, res ->
          departamentoDao.findById(req.params("id").toLong())
       }
-   
+      
+      //http://localhost:4567/api/departamentos/Informatica
+      get("/departamentos/:nombre") { req, res ->
+        departamentoDao.findByNombre(req.params("nombre"))
+      }
+      
+      //http://localhost:4567/api/departamentos/create
+      post("/departamentos/create") { req, res ->
+        departamentoDao.save(nombre = req.qp("nombre"), email = req.qp("responsable"))
+        res.status(201)
+        "ok"
+      }
+      
+      //http://localhost:4567/api/departamentos/delete/1
+      delete("/departamentos/delete/:id") { req, res ->
+        departamentoDao.delete(req.params("id").toLong())
+        "ok"
+      }
+      
+      //http://localhost:4567/api/departamentos/update/1
+      patch("/departamentos/update/:id") { req, res ->
+        departamentoDao.update(
+                id = req.params("id").toLong(),
+                nombre = req.qp("nombre"),
+                responsable = req.qp("responsable")
+        )
+         "ok"
+       }
+      
    }
    
 }
