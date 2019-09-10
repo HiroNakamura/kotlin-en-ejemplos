@@ -47,6 +47,11 @@ fun rest_api(){
       get("/departamentos"){ req, res->
          objectMapper.writeValueAsString(departamentoDao.departamentos)
       }
+
+      //http://localhost:4567/api/departamentos/1
+      get("/departamentos/:id") { req, res ->
+         departamentoDao.findById(req.params("id").toLong())
+      }
    
    }
    
