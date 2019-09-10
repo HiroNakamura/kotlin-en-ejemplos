@@ -13,3 +13,8 @@ import spark.Spark.*
 fun getHola(){
    get("/holaKotlin") { req, res -> "Bienvenidos a Kotlin en ejemplos." }
 }
+
+
+fun rest_api(){
+   
+}
