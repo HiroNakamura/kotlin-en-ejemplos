@@ -7,6 +7,8 @@ package chapter2
 */
 
 import spark.Spark.*
+import spark.Request
+import spark.Response
 import com.fasterxml.jackson.databind.ObjectMapper
 
 
@@ -43,7 +45,7 @@ fun rest_api(){
       
       //http://localhost:4567/api/departamentos/create
       post("/departamentos/create") { req, res ->
-        departamentoDao.save(nombre = req.qp("nombre"), email = req.qp("responsable"))
+        departamentoDao.save(nombre = req.qp("nombre"), responsable = req.qp("responsable"))
         res.status(201)
         "ok"
       }
