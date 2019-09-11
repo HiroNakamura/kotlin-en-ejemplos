@@ -12,7 +12,7 @@ var cliente={
             }
         })
         .catch(e=>{
-            console.error("Ha ocurrido un error en el servidor");
+            console.error("Error en el servidor:"+e);
         })
      
    }

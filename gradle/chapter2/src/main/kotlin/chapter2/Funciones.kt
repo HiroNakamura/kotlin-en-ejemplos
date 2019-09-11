@@ -27,7 +27,7 @@ fun Request.qp(key: String): String = this.queryParams(key)
 fun rest_api(){
    
    path("/api") {
-      
+
       //http://localhost:4567/api/departamentos
       get("/departamentos"){ req, res->
          objectMapper.writeValueAsString(departamentoDao.departamentos)
@@ -65,6 +65,9 @@ fun rest_api(){
         )
          "ok"
        }
+
+      //CORS
+      cors();
       
    }
    
