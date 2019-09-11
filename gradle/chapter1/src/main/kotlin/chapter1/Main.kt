@@ -7,9 +7,6 @@ package chapter1
 
 fun main(args: Array<String>) {
 
-    /*Chapter 2 */
-    
-
     /*Chapter 1 */
     //mockTestR()
     //val stringSet = setOf("one", "two", "three")
