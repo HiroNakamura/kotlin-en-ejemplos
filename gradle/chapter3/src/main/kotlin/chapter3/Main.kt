@@ -5,7 +5,6 @@ package chapter3
 *@date 11/09/2019
 */
 
-import io.javalin.Javalin
 
 fun main() {
     mockTestA();
