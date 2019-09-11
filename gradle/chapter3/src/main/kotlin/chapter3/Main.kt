@@ -7,5 +7,6 @@ package chapter3
 
 
 fun main() {
-    mockTestA();
+    //mockTestA();
+    mockTestB();
 }
