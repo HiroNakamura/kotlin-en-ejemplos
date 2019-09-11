@@ -10,5 +10,5 @@ import io.javalin.Javalin
 fun main() {
     val app = Javalin.create().start(8888)
     //http://localhost:8888/saludo
-    app.get("/saludo") { ctx -> ctx.result("Javalin for Kotlin") }
+    app.get("/saludo") { ctx -> ctx.result("Javalin for Kotlin.") }
 }
