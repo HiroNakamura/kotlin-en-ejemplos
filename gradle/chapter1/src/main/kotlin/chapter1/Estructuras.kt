@@ -29,12 +29,28 @@ fun recorrer_mapa():Unit{
   mapaEnteros.forEach{ key, value->
     println("${key} : ${value}")
   }
+
+  println("1. Mapa Hijo:")
+  val hashMapHijo:MutableMap<Long,Hijo> = mutableMapOf<Long,Hijo>(1L to Hijo("Genesis","Urchate",32,67.3,1.66),2L to Hijo("Holga","Tevez",34,54.8,1.62),3L to Hijo("Jose","Corona",54,70.0,1.70))
+  
+  hashMapHijo.set(4L, Hijo("Tomas","Corona",45,65.0,1.67))
+  println("Llave 3L: "+hashMapHijo.get(3L))
+
+  hashMapHijo.forEach{ key, value -> println("$key : ${value.mostrar()}")}
+  println("2. Mapa Hijo:")
+  for((key, value) in hashMapHijo){
+    println("$key : ${value.mostrar()}")
+  }
+
 }
 
 fun recorrer_lista():Unit{
   val lista = listOf(0,1,2,3)
-  lista.forEach{it ->
-    println("$it")
+  if(!lista.isEmpty() && lista.size>0){
+    println("\n#Lista llena !!")
+    lista.forEach{ it ->
+      println("$it")
+    }
   }
 }
 

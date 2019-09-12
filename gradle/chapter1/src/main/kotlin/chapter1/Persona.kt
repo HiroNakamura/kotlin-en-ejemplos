@@ -17,5 +17,9 @@ open class Persona(open var nombre:String,
   init{
     println("Nombre ${nombre}  ${apellido}")
   }
+
+  fun mostrar():String{
+    return "Nombre: $nombre $apellido, Edad: $edad, Peso: $peso, Talla: $talla"
+  }
   
  }
