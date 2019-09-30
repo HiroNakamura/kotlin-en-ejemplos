@@ -22,13 +22,13 @@ Ejercicios hechos en lenguaje **Kotlin**.
 
 Para instalar Kotlin se puede usar SDKMAN!
 
-```
+```java
 $ sdk install kotlin
 ```
 
 Mostrar versión instalada:
 
-```
+```java
 $ kotlinc -version
 ```
 
