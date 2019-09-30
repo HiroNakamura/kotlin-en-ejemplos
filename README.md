@@ -7,7 +7,20 @@ Ejercicios hechos en lenguaje **Kotlin**.
 
 **Nota:** Es necesario con Gradle (https://gradle.org) instalado.
 
-Para instalar Kotlin se puede usr SDKMAN!
+
+### Temario
+
+1. Kotlin básico.
+   1. Tipo de datos.
+   2. Funciones.
+   3. Clases e interfaces.
+2. Spark Framework.
+3. Javalin.
+4. Otros.
+
+
+
+Para instalar Kotlin se puede usar SDKMAN!
 
 ```
 $ sdk install kotlin
