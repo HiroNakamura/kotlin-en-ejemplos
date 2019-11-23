@@ -5,7 +5,7 @@ Ejercicios hechos en lenguaje **Kotlin**.
 ![Kotlin con Gradle](https://2.bp.blogspot.com/-sqq9NOrKDg8/XDD52CyK41I/AAAAAAAADFE/M0BsL_-9skU0rmuqfTqBUZDXNaHlNvXJQCPcBGAYYCw/s1600/1*MzEB8jrt1rQoZFCuANd_RA.jpeg)
 
 
-**Nota:** Es necesario con Gradle (https://gradle.org) instalado.
+**Nota:** Es necesario con Gradle (https://gradle.org) instalado. Ahora también es necesario tener Maven instalado en su sistema (ver https://sdkman.io/). 
 
 
 ### Temario
@@ -32,7 +32,7 @@ Mostrar versión instalada:
 $ kotlinc -version
 ```
 
-El proyecto usa **Gradle** para construir y ejecutar el proyecto. 
+El proyecto usa **Gradle** (ahora también **Maven**) para construir y ejecutar el proyecto. 
 
 
 **Link:**
