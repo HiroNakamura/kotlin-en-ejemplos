@@ -27,7 +27,7 @@ fun tipos():Unit{
   val verdadero:Boolean = 34 > 21
 
   //String
-  val cadena: String = "Aprendiendo Koltin comosi fuera en primero."
+  val cadena: String = "Aprendiendo Kotlin comosi fuera en primero."
 
   //Array
   var numeros:Array<Int> = arrayOf(0,9,8,7,6,5);
