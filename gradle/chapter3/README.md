@@ -19,9 +19,9 @@ fun main() {
 
 
 Sitio oficial:
-https://javalin.io
+* [Javalin](https://javalin.io)
 
 
 Github:
-https://github.com/tipsy/javalin/
+* [Javalin en Github](https://github.com/tipsy/javalin/)
 
