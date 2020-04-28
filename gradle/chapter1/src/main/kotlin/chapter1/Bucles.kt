@@ -63,7 +63,7 @@ fun ciclo_for(){
    var conteo:Int=0;
    val miLista = listOf("Aldebran","Casius","Andromeda","Apolo")
    println("#Ciclo for:")
-  for(arg in liLista){
+  for(arg in miLista){
     println("$arg")
   }
   

@@ -148,6 +148,7 @@ fun mockTestK():Unit{
 }
 
 fun mockTestJ():Unit{
+   println("Recorriendo listas,arreglos y mapas")
     recorrer_array()
     recorrer_lista()
     recorrer_mapa()
