@@ -17,6 +17,10 @@ apply plugin: 'application'
 mainClassName = 'chapter1.MainKt'
 defaultTasks 'run'
 
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+
 repositories {
   mavenCentral()
 }
