@@ -169,6 +169,11 @@ fun mockTestI():Unit{
 fun mockTestA():Unit{
    val nombre:String = "John Wallager"
    println(saludar(nombre))
+   val chars = ('a'..'z').toList()
+   println(chars.take(5))
+   println(chars.takeLast(5))
+   println(chars.drop(5))
+   println(chars.dropLast(5))
 }
 
 fun mockTestB():Unit{
